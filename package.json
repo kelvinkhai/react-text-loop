@@ -18,6 +18,8 @@
         "start": "parcel examples/index.html -d examples/dist --cache-dir examples/cache --open",
         "lint": "eslint src/ --ext .js,.tsx,.ts",
         "prepublishOnly": "yarn run test && yarn run lint && yarn run ts:check && yarn run clean && yarn run build",
+        "install": "npm run build",
+        "prepare": "npm run build",
         "test": "jest",
         "test:coverage": "jest --coverage",
         "ts:check": "tsc -p tsconfig.json --allowJs false --noEmit --emitDeclarationOnly false"
