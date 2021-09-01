@@ -262,7 +262,7 @@ class TextLoop extends React.PureComponent<Props, State> {
                                     transition: `width ${this.props.adjustingSpeed}ms linear`,
                                     height: parsedHeight,
                                     width: parsedWidth,
-                                    maxWidth: '100%'
+                                    maxWidth: "100%",
                                 }}
                             >
                                 {interpolatedStyles.map(config => (
@@ -279,7 +279,7 @@ class TextLoop extends React.PureComponent<Props, State> {
                                                 this.wordBox == null
                                                     ? "relative"
                                                     : "absolute",
-                                            maxWidth: '100%'
+                                            maxWidth: "100%",
                                         }}
                                     >
                                         {config.data.currentEl}
